@@ -13,10 +13,10 @@ export function PlantsIndexPage() {
       {plants.filter((plants) => plants.name.toLowerCase().includes(searchFilter.toLowerCase())).map(plants => (
         <div key={plants.id} className="plants">
           <h2>{plants.name}</h2>
-          <img src={plants.image_url} alt="" />
+          {/* <img src={plants.image_url} alt="" /> */}
           <p> {plants.description}</p>
-          <p>Category: {plants.category}</p>
-          <button type="info" onClick={() => (plants)}> More Info</button>
+          {/* <p>Category: {plants.category}</p> */}
+          <button type="info" onClick={() => (plants)}> Save Plant</button>
         </div>
       ))}
       </div> 

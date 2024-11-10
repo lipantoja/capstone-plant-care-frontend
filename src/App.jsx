@@ -2,8 +2,9 @@ import axios from "axios";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import { Header } from "./Header";
-// import { SignupPage } from "./SignupPage";
-// import { LoginPage } from "./LoginPage";
+import { SignupPage } from "./SIgnupPage";
+import { LoginPage } from "./LoginPage";
+import { LogoutLink } from "./LogoutLink";
 import { PlantsIndexPage } from "./PlantsIndexPage";
 import { PlantsShowPage } from "./PlantsShowPage";
 // import { PlantsNewPage } from "./PlantsNewPage";
@@ -24,14 +25,18 @@ const router = createBrowserRouter([
         element: <PlantsIndexPage />,
         loader: () => axios.get("http://localhost:3000/plants.json").then((response) => response.data)
       },
-      // {
-      //   path: "/signup",
-      //   element: <SignupPage />,
-      // },
-      // {
-      //   path: "/login",
-      //   element: <LoginPage />,
-      // },
+      {
+        path: "/signup",
+        element: <SignupPage />,
+      },
+      {
+        path: "/login",
+        element: <LoginPage />,
+      },
+      {
+        path: "/logout",
+        element: <LogoutLink />,
+      },
       {
         path: "/plants",
         element: <PlantsIndexPage />,
