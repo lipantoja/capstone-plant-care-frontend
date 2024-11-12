@@ -1,3 +1,4 @@
+
 import axios from "axios";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
@@ -7,6 +8,8 @@ import { LoginPage } from "./LoginPage";
 import { LogoutLink } from "./LogoutLink";
 import { PlantsIndexPage } from "./PlantsIndexPage";
 import { PlantsShowPage } from "./PlantsShowPage";
+import { SchedulesIndexPage } from "./SchedulesIndexPage";
+// import { SchedulesShowPage } from "./SchedulesShowPage";
 // import { PlantsNewPage } from "./PlantsNewPage";
 import { Footer } from "./Footer";
 
@@ -42,15 +45,21 @@ const router = createBrowserRouter([
         element: <PlantsIndexPage />,
         loader: () => axios.get("http://localhost:3000/plants.json").then((response) => response.data),
       },
-  // {
-  //   path: "/plants/new",
-  //   element: <PlantsNewPage />,
-  // },
-    {
-      path: "/plants/:id",
-      element: <PlantsShowPage />,
-      loader: ({ params }) => axios.get(`http://localhost:3000/plants/${params.id}.json`).then((response) => response.data),
-    },
+      {
+        path: "/plants/:id",
+        element: <PlantsShowPage />,
+        loader: ({ params }) => axios.get(`http://localhost:3000/plants/${params.id}.json`).then((response) => response.data),
+      },
+      {
+        path: "/schedules",
+        element: <SchedulesIndexPage />,
+        loader: () => axios.get("http://localhost:3000/schedules.json").then((response) => response.data),
+      },
+      // {
+      //   path: "/schedules/:id",
+      //   element: <SchedulesShowPage />,
+      //   loader: ({ params }) => axios.get(`http://localhost:3000/schedules/${params.id}.json`).then((response) => response.data),
+      // },
     ],
   },
 ]);
