@@ -1,6 +1,7 @@
 
 import axios from "axios";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import "./App.css";
 
 import { Header } from "./Header";
 import { SignupPage } from "./SIgnupPage";

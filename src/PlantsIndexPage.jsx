@@ -26,7 +26,7 @@ export function PlantsIndexPage() {
   
   return (
     <div>
-      <h1>Plant List</h1>
+      <h1 className="title">Plant List</h1>
       <input 
       type="text" 
       value={searchFilter} 

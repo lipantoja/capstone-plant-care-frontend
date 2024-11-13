@@ -14,8 +14,7 @@ export function SchedulesIndexPage() {
         <div key={schedules.id} className="schedules">
           {/* <h2>{schedules.image_url}</h2> */}
           <img src={schedules.image_url} alt="" />
-          <p> {schedules.watering_start_date}</p>
-          <button type="button" onClick={() => (schedules)}> Save Schedule</button>
+          <p> Water On: {new Date(schedules.watering_start_date).toLocaleString()}</p>
         </div>
       ))}
       </div> 
