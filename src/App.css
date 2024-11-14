@@ -1,6 +1,6 @@
 /* App.css */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #F1F8E9;
   color: #2E7D32;
 }
@@ -55,7 +55,7 @@ body {
 }
 
 button {
-  background-color: #81C784;
+  background-color: #5c925e;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -65,7 +65,7 @@ button {
 }
 
 button:hover {
-  background-color: #66BB6A;
+  background-color: #6aa86d;
 }
 
 .watering-form {
