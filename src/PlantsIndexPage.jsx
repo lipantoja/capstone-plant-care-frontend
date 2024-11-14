@@ -38,9 +38,10 @@ export function PlantsIndexPage() {
       plant.name.toLowerCase().includes(searchFilter.toLowerCase())).map(plant => (
         <div key={plant.id} className="plant">
           <h2>{plant.name}</h2>
+          <img src={plant.image_url} />
           <p> {plant.description}</p>
-          <p> Requires {plant.amount_of_sun} Hours of Sun</p>
-          <p> Water Every {plant.days_to_water} Days</p>
+          <p> 🌞 Hours of Sunlight: {plant.amount_of_sun} </p>
+          <p> 💧 Days Between Watering: {plant.days_to_water} </p>
           <button type="info" onClick={() => setSelectedPlant(plant)}> Set Watering Schedule </button>
         {/* Simple form for adding a watering schedule, shown when a plant is selected */}
         {selectedPlant && selectedPlant.id === plant.id && (
