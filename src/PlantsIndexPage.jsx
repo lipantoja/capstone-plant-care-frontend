@@ -9,7 +9,6 @@ export function PlantsIndexPage() {
   const [selectedPlant, setSelectedPlant] = useState(null);
 
   const createPlant = (plant) => {
-    console.log(plant)
     axios.post("http://localhost:3000/schedules.json", {
       plant_id: plant.id, 
       watering_start_date: wateringStartDate,
@@ -43,7 +42,7 @@ export function PlantsIndexPage() {
           <p> 🌞 Hours of Sunlight: {plant.amount_of_sun} </p>
           <p> 💧 Days Between Watering: {plant.days_to_water} </p>
           <button type="info" onClick={() => setSelectedPlant(plant)}> Set Watering Schedule </button>
-        {/* Simple form for adding a watering schedule, shown when a plant is selected */}
+          
         {selectedPlant && selectedPlant.id === plant.id && (
               <form
                 onSubmit={(e) => {

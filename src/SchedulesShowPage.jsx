@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useLoaderData, useNavigate } from "react-router-dom";
 
-// import { SchedulesShow } from "./SchedulesShow";
-
 export function SchedulesShowPage() {
   const schedule = useLoaderData();
   const navigate = useNavigate();

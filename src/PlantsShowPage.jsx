@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useLoaderData, useNavigate } from "react-router-dom";
 
-// import { PlantsShow } from "./PlantsShow";
-
 export function PlantsShowPage() {
   const plant = useLoaderData();
   const navigate = useNavigate();

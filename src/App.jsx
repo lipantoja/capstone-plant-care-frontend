@@ -10,8 +10,6 @@ import { LogoutLink } from "./LogoutLink";
 import { PlantsIndexPage } from "./PlantsIndexPage";
 import { PlantsShowPage } from "./PlantsShowPage";
 import { SchedulesIndexPage } from "./SchedulesIndexPage";
-// import { SchedulesShowPage } from "./SchedulesShowPage";
-// import { PlantsNewPage } from "./PlantsNewPage";
 import { Footer } from "./Footer";
 
 const router = createBrowserRouter([
@@ -56,11 +54,6 @@ const router = createBrowserRouter([
         element: <SchedulesIndexPage />,
         loader: () => axios.get("http://localhost:3000/schedules.json").then((response) => response.data),
       },
-      // {
-      //   path: "/schedules/:id",
-      //   element: <SchedulesShowPage />,
-      //   loader: ({ params }) => axios.get(`http://localhost:3000/schedules/${params.id}.json`).then((response) => response.data),
-      // },
     ],
   },
 ]);
