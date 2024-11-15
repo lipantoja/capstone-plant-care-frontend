@@ -1,8 +1,14 @@
-# React + Vite
+# Plant Care App Capstone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+* [General Info] (#general-info)
+* [Technologies] (#technologies)
 
-Currently, two official plugins are available:
+## General Info
+The following project is the frontend of a full-stack plant care app. The goal is to have a user be able to signup, login, view the given plants, and select plants the user would like to add to their "My Plants" page. Once that a plant is scheduled, the aspiration is to havea users have a clean schedule of when their selected plants will next need to be watered. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This item is a work in progress.
+
+## Technologies
+* React 10.8.2
+
