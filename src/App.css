@@ -30,7 +30,7 @@ body {
 
 .plant-card {
   background-color: #E8F5E9;
-  border: 1px solid #C8E6C9;
+  border: 1px solid #E8F5E9;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,15 +38,15 @@ body {
 }
 
 .plant-image {
-  width: 100%;
+  width: auto;
   height: auto;
-  max-height: 200px;
+  max-height: 300px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.plant-card h2 {
-  color: #4CAF50;
+.plant-card h3 {
+  color: #388E3C;
   margin-bottom: 10px;
 }
 
